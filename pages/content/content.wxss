@@ -1,0 +1,82 @@
+/* pages/content/content.wxss */
+@import "../wxParse/wxParse.wxss";
+.content-inner{
+  padding:0 10px;
+}
+.wxParse-span {
+  font-size:12px;
+  color:#666666;
+  padding:0 0 0 5px;
+}
+.author.wxParse-span{
+  display:inline-block;
+}
+.bio.wxParse-span{
+  display:inline-block;
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content.wxParse-div{
+  font-size:14px;
+  padding-top:10px;
+  text-indent: 2em;
+}
+.wxParse-p{
+  padding-top:5px;
+  line-height:24px;
+}
+.wxParse-figure{
+  text-align: center;
+  margin-left:-30px;
+ }
+ .wxParse-p image{
+  margin-left:-30px;
+ }
+.wxParse-figure image,.wxParse-p image{
+  width:100% !important;
+}
+.wxParse-script{
+  display: none;
+}
+.WxEmojiView.wxParse-inline{
+  font-size:14px;
+
+}
+.view-more.wxParse-div{
+  font-size:14px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-bottom: 3px solid #00C5FF;
+}
+
+/* 评论区CSS */
+.comments{
+  padding:10px 5%;
+  width:90%;
+}
+.commentsBlock{
+  padding-bottom:10px;
+  margin-bottom: 5px;
+  border-bottom:1px dashed #ccc;
+}
+.commentsAuthor{
+  width:100%;
+  height:34px;
+  padding-bottom:5px;
+}
+.commentsAuthor image{
+  width: 24px;
+  height:24px;
+  margin-right: 10px;
+  vertical-align:middle;
+}
+.commentsAuthor text{
+  font-size:14px;
+  display:inline-block;
+}
+.commentContent{
+  font-size:14px;
+  line-height:20px;
+}

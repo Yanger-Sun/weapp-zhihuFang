@@ -1,0 +1,40 @@
+<!--index.wxml-->
+
+ <wxs module="dateFr" src="../filter/dateChange.wxs"></wxs>
+
+<view class="container">
+  
+  <!-- 顶部轮播位置 -->
+  <swiper class="bannerTop" autoplay="true" interval="4000" duration="500" circular="true">
+    <block wx:for="{{banner}}">
+      <swiper-item class="banner">
+        <image class="bannerImg" src="{{item.images[0]}}" data-id="{{item.id}}"  class="slide-image" bindtap="toList"/>
+        <text class="bannerTitle">{{item.title}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="newList">
+      <view class="newT">往期新闻</view>
+      <view class="dateBlock">
+          <block wx:for="{{beforeNews}}"  wx:for-item="forByDate">
+            <view class="aboutOneDate">
+              <!-- 日期显示 -->
+              <view class="nowDate">时间: {{dateFr.dateChangeWord(forByDate.date)}}</view>
+              <!-- 当前日期下的新闻内容 -->
+                <block wx:for="{{forByDate.stories}}"  wx:for-item="forByNews">
+                  <view class="todayNews"  data-id="{{forByNews.id}}"  bindtap="toList">
+                      <view class="nowImage">
+                        <image class="newsImg" data-id="{{forByNews.id}}"  src="{{forByNews.images}}" class="slide-image" />
+                        <text data-id="{{forByNews.id}}" >{{forByNews.title}}</text>
+                      </view>   
+                  </view>   
+                </block>  
+              </view>
+          </block>
+      </view>
+  </view>
+
+  
+
+</view>

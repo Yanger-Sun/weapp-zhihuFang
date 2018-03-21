@@ -1,0 +1,12 @@
+var DateFr = {
+
+  dateChangeWord: function (date) {
+    
+    var newDateStr = date.slice(0, 4) + "年" + date.slice(4, 6) + "月" + date.slice(6) + "日";
+    return newDateStr;
+  }
+}
+
+module.exports = {
+  dateChangeWord: DateFr.dateChangeWord
+}

@@ -1,0 +1,18 @@
+<!--pages/list/list.wxml-->
+<view class="userInfo">
+    <view class="userLine1">
+          <image class="userAvatar" src="{{userInfo.avatarUrl}}" />
+          <view class="userNickName">{{userInfo.nickName}}</view>
+    </view>
+</view>
+
+<view class="introNews">
+    <view class="introList">栏目一览</view>
+    <view class="themesBlock">
+    <block wx:for="{{themes}}">
+            <view class="introBlock" bindtap="nagavitorTo" data-id="{{item.id}}">
+                <text data-id="{{item.id}}">{{item.name}}</text>
+            </view>
+    </block>
+    </view>
+</view>

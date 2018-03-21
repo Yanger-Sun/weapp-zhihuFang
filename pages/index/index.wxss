@@ -1,0 +1,90 @@
+/**index.wxss**/
+.container{
+  padding:0;
+}
+.bannerTop{
+  width: 100%;
+  height:200px;
+}
+.banner{
+  width:100%;
+  position: relative;
+}
+.slide-image{
+  width:100%;
+  height:100%;
+}
+.bannerTitle{
+  width:90%;
+  position:absolute;
+  bottom:0;
+  height:70rpx;
+  background:rgba(0, 0, 0, 0.6);
+  color:#fff;
+  padding:0 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  left:0;
+  font-size:30rpx;
+  line-height: 70rpx;
+}
+
+.newList{
+  width: 100%;
+  padding-top: 20px;
+  background: #eee;
+}
+.newList .newT{
+  font-size:15px;
+  font-weight: bold;
+  color:#000;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.newT,.dateBlock .nowDate{
+  width:90%;
+  padding: 0 5%;
+}
+.dateBlock .nowDate{
+  width:90%;
+  border-left:5px solid #cd6009;
+  margin:5px auto;
+  padding-left:5px;
+  box-sizing: border-box;
+  height:20px;
+}
+.todayNews{
+  width:90%;
+  margin: 0 auto;
+  padding: 5px 0;
+  clear: both;
+  height:34px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.nowDate{
+  text-align:left;
+  font-size:14px;
+  color:#cd6009;
+}
+.nowImage image{
+  width:34px;
+  height:34px;
+  float:left; 
+}
+.nowImage text{
+  display:inline-block;
+  font-size:14px;
+  margin-left:10px;
+  width:80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height:34px;
+  float:left;
+  line-height:34px;
+  color:#555;
+}

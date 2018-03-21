@@ -1,0 +1,16 @@
+<!--pages/content/content.wxml-->
+<import src="../wxParse/wxParse.wxml" />
+
+<template is="wxParse" data="{{wxParseData:article.nodes}}" />
+
+<view class="comments">
+    <block  wx:for="{{comments}}">
+        <view class="commentsBlock">
+          <view class="commentsAuthor">
+              <image class="commentsImg" src="{{item.avatar}}" data-id="{{item.id}}" width="34" /> 
+              <text>{{item.author}}</text>
+          </view> 
+          <view class="commentContent">{{item.content}}</view> 
+        </view> 
+    </block>
+</view>

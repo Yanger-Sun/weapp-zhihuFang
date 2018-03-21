@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/content/content",
+    "pages/themes/themes"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white",
+    "backgroundTextStyle": "dark",
+    "backgroundColor":"#000000",
+    "onReachBottom":true,
+    "onReachBottomDistance":20,
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "list":[{
+        "pagePath":"pages/index/index",
+        "text":"主页"
+    },{
+      "pagePath": "pages/list/list",
+      "text": "列表"  
+    }],
+      "selectedColor":"#e5004f",
+      "color":"#000",
+      "position":"bottom"  
+  }
+}
